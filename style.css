@@ -1,1 +1,289 @@
+Oh, maksud kamu ingin 2 kode HTML dengan style CSS yang berbeda, bukan halaman profil, ya?
 
+Berikut konsepnya:
+
+- Kode 1: Website Siswa Mikrotik dengan desain modern biru-putih.
+- Kode 2: Website Siswa Mikrotik dengan desain dark mode hitam-biru, lebih keren dan futuristik.
+
+Keduanya berupa halaman website, bukan profil siswa. Bisa langsung di-upload ke GitHub Pages.
+
+## 1. HTML – Style Modern Blue
+
+HTMLBungkus barisSalin kodePratinjau
+
+```html
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siswa Mikrotik</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5fa;
+    color: #18324c;
+}
+header {
+    background: #0879c9;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+nav {
+    background: #07528b;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(120deg,#0879c9,#51b8f5);
+    color: white;
+}
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 18px;
+}
+button {
+    margin-top: 25px;
+    padding: 13px 25px;
+    border: none;
+    background: white;
+    color: #0879c9;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+.box {
+    display: inline-block;
+    width: 250px;
+    padding: 30px;
+    margin: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ccd8e3;
+}
+.box h3 {
+    color: #0879c9;
+    margin-bottom: 15px;
+}
+footer {
+    background: #07528b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>SISWA MIKROTIK</h1>
+<p>Network Technology & Digital Learning</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#materi">Materi</a>
+<a href="#layanan">Layanan</a>
+</nav>
+
+<section class="hero">
+<h2>WELCOME TO MIKROTIK</h2>
+<p>Belajar jaringan komputer menjadi lebih mudah dan menyenangkan.</p>
+<button onclick="location.href='#materi'">Mulai Belajar</button>
+</section>
+
+<section class="content" id="materi">
+<h2>Materi Pembelajaran</h2>
+<div class="box">
+<h3>Mikrotik</h3>
+<p>Mengenal RouterOS dan konfigurasi router.</p>
+</div>
+<div class="box">
+<h3>Networking</h3>
+<p>Belajar jaringan komputer dan internet.</p>
+</div>
+<div class="box">
+<h3>Server</h3>
+<p>Memahami DHCP, DNS dan Web Server.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Siswa Mikrotik</p>
+</footer>
+
+</body>
+</html>
+```
+
+## 2. HTML – Style Dark Futuristic
+
+HTMLBungkus barisSalin kodePratinjau
+
+```html
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siswa Mikrotik</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #080d18;
+    color: white;
+}
+header {
+    padding: 25px;
+    text-align: center;
+    background: #101b30;
+    border-bottom: 2px solid #00c8ff;
+}
+header h1 {
+    color: #00c8ff;
+    letter-spacing: 3px;
+}
+nav {
+    text-align: center;
+    padding: 18px;
+    background: #111c2e;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+nav a:hover {
+    color: #00c8ff;
+}
+.hero {
+    padding: 110px 20px;
+    text-align: center;
+    background: radial-gradient(circle,#123c5c,#080d18);
+}
+.hero h2 {
+    color: #00c8ff;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.hero p {
+    color: #c5d8e8;
+}
+button {
+    padding: 14px 30px;
+    margin-top: 25px;
+    color: white;
+    background: #008fc4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content {
+    text-align: center;
+    padding: 50px 20px;
+}
+.card {
+    display: inline-block;
+    background: #111c2e;
+    border: 1px solid #00c8ff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #008fc4;
+}
+.card h3 {
+    color: #00c8ff;
+    margin-bottom: 15px;
+}
+footer {
+    background: #101b30;
+    border-top: 1px solid #00c8ff;
+    text-align: center;
+    padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SISWA MIKROTIK</h1>
+<p>Network Engineer Community</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#materi">Learning</a>
+<a href="#materi">Technology</a>
+</nav>
+
+<section class="hero">
+<h2>MIKROTIK NETWORK</h2>
+<p>Explore Networking, RouterOS and Cyber Technology.</p>
+<button onclick="location.href='#materi'">Explore Now</button>
+</section>
+
+<section class="content" id="materi">
+<h2>OUR TECHNOLOGY</h2>
+
+<div class="card">
+<h3>ROUTEROS</h3>
+<p>Belajar sistem operasi router Mikrotik.</p>
+</div>
+
+<div class="card">
+<h3>NETWORKING</h3>
+<p>Mempelajari topologi dan jaringan komputer.</p>
+</div>
+
+<div class="card">
+<h3>CONFIGURATION</h3>
+<p>Praktik konfigurasi jaringan secara langsung.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SISWA MIKROTIK | NETWORK TECHNOLOGY</p>
+</footer>
+
+</body>
+</html>
+```
+
+Cara penggunaan: Simpan kode pertama sebagai `index.html` dan kode kedua sebagai `dark.html` dalam satu repository GitHub.
+
+Keduanya sudah menggunakan CSS internal, jadi tidak perlu file CSS tambahan.
